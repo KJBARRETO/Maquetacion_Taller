@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos - Tiendas Claro</title>
+    <link rel="stylesheet" href="Css/Index.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="Img/LogoClaro.svg" alt="Logo Claro" width="150" height="50">
+            </a>
+            <h2>Claro</h2>
+            <h2>Servicio de Tegnologias y Comunicaciones S.A.S</h2>
+            <h2>C.C. Plaza Real - Local 165</h2>
+            <img src="Img/Superintendencia.png" alt="Logo Superintendencia"> <br>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Ubicacion.html">Ubicacion</a></li>
+                <li><a href="Equipos.html">Equipos</a></li>
+                <li><a href="Tegnologias.html">Tegnologias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="buscador">
+            <h2>Buscar Equipos</h2>
+            <form action="#" method="get">
+                <input type="search" name="buscar" id="buscar" placeholder="Buscar equipos...">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section class="categorias">
+            <h2>Nuestros Equipos</h2>
+            
+            <!-- Categoría Celulares -->
+            <div class="categoria">
+                <h3>Celulares</h3>
+                <div class="productos">
+                    <div class="producto">
+                        <img src="Img/Equipos/samsung-s24.jpg" alt="Samsung Galaxy S24" width="200" height="200">
+                        <h4>Samsung Galaxy S24</h4>
+                        <p>$4.499.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Img/Equipos/iphone-15.webp" alt="iPhone 15" width="200" height="200">
+                        <h4>iPhone 15</h4>
+                        <p>$4.999.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Img/Equipos/motorola-edge.webp" alt="Motorola Edge 40" width="200" height="200">
+                        <h4>Motorola Edge 40</h4>
+                        <p>$2.499.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría Tablets -->
+            <div class="categoria">
+                <h3>Tablets</h3>
+                <div class="productos">
+                    <div class="producto">
+                        <img src="Img//Equipos/ipad-pro.webp" alt="iPad Pro" width="200" height="200">
+                        <h4>iPad Pro 2024</h4>
+                        <p>$5.999.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Img//Equipos/galaxy-tab.jpg" alt="Samsung Galaxy Tab S9" width="200" height="200">
+                        <h4>Samsung Galaxy Tab S9</h4>
+                        <p>$3.999.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría Computadores -->
+            <div class="categoria">
+                <h3>Computadores</h3>
+                <div class="productos">
+                    <div class="producto">
+                        <img src="Img/Equipos/lenovo-ideapad.avif" alt="Lenovo IdeaPad" width="200" height="200">
+                        <h4>Lenovo IdeaPad 3</h4>
+                        <p>$2.199.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Img/Equipos/hp-pavilion.avif" alt="HP Pavilion" width="200" height="200">
+                        <h4>HP Pavilion 15</h4>
+                        <p>$2.899.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría Accesorios -->
+            <div class="categoria">
+                <h3>Accesorios</h3>
+                <div class="productos">
+                    <div class="producto">
+                        <img src="Img/Equipos/airpods.jpeg" alt="AirPods Pro" width="200" height="200">
+                        <h4>AirPods Pro</h4>
+                        <p>$999.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Img/Equipos/galaxy-watch.webp" alt="Galaxy Watch 6" width="200" height="200">
+                        <h4>Galaxy Watch 6</h4>
+                        <p>$1.299.900</p>
+                        <button type="button">Ver producto</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filtros laterales -->
+        <aside class="filtros">
+            <h3>Filtrar por:</h3>
+            <form action="#" method="get">
+                <div class="filtro-categoria">
+                    <h4>Categoría</h4>
+                    <label><input type="checkbox" name="categoria" value="celulares"> Celulares</label>
+                    <label><input type="checkbox" name="categoria" value="tablets"> Tablets</label>
+                    <label><input type="checkbox" name="categoria" value="computadores"> Computadores</label>
+                    <label><input type="checkbox" name="categoria" value="accesorios"> Accesorios</label>
+                </div>
+
+                <div class="filtro-precio">
+                    <h4>Rango de Precio</h4>
+                    <label>Mínimo: <input type="number" name="precio-min"></label>
+                    <label>Máximo: <input type="number" name="precio-max"></label>
+                </div>
+
+                <div class="filtro-marca">
+                    <h4>Marca</h4>
+                    <label><input type="checkbox" name="marca" value="samsung"> Samsung</label>
+                    <label><input type="checkbox" name="marca" value="apple"> Apple</label>
+                    <label><input type="checkbox" name="marca" value="motorola"> Motorola</label>
+                    <label><input type="checkbox" name="marca" value="huawei"> Huawei</label>
+                </div>
+
+                <button type="submit">Aplicar Filtros</button>
+            </form>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <div>
+                <a href="#">Consulta Terminos y Condiciones de las promociones vigentes</a>
+            </div>
+            <div>
+                <a href="#"><img src="Img/Footer/youtube.png" alt="Youtube"></a>
+                <a href="#"><img src="Img/Footer/whatsapp.png" alt="Whatsapp"></a>
+                <a href="#"><img src="Img/Footer/sobre.png" alt="Correo"></a>
+                <a href="#"><img src="Img/Footer/youtube.png" alt="Facebook"></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Nuestras Tiendas</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><p>Todos los derechos reservados, 2024</p></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Legal y regulatorio</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
