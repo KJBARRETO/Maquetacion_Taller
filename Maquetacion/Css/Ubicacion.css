@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Cabecera */
+.Cabecera {
+    background-color: white;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid red;
+}
+
+.Cabecera img {
+    max-width: 120px;
+}
+
+/* Barra de navegación con Bootstrap */
+nav {
+    background-color: red;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: background 0.3s, border-radius 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: darkred;
+    border-radius: 5px;
+}
+
+/* Carrusel de Bootstrap */
+.Carrusel {
+    padding: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Productos */
+.Productos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.Productos .producto {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.Productos .producto:hover {
+    transform: scale(1.05);
+}
+
+.Productos .producto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Sección de ubicación con Bootstrap */
+.ubicacion {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fotos-local {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fotos-local img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer con Bootstrap */
+footer {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 8px 15px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+    transform: scale(1.2);
+}
