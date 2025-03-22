@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos - Tiendas Claro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Css/estilos.css">
+    <style>
+        main {
+            padding-top: 40px;
+            margin-top: 40px;
+        }
+        
+        .social a {
+            margin: 0 15px;
+            display: inline-block;
+        }
+        
+        .social img {
+            width: 50px;
+            height: 50px;
+            filter: invert(1) brightness(100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Img/LogoClaro.svg" alt="Logo Claro" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Ubicacion.html">Ubicación</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="Equipos.html">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Tecnologia.html">Tecnología</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main class="container my-4">
+        <!-- Listado de productos -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Nuestros Equipos</h2>
+            
+            <!-- Celulares -->
+            <div class="mb-5">
+                <h3 class="mb-3">Celulares</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Img/Equipos/samsung-s24.jpg" class="card-img-top" alt="Samsung Galaxy S24">
+                            <div class="card-body">
+                                <h4>Samsung Galaxy S24</h4>
+                                <p class="precio">$4.499.900</p>
+                                <a href="#" class="btn btn-danger">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Img/Equipos/iphone-15.webp" class="card-img-top" alt="iPhone 15">
+                            <div class="card-body">
+                                <h4>iPhone 15</h4>
+                                <p class="precio">$4.999.900</p>
+                                <a href="#" class="btn btn-danger">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Img/Equipos/motorola-edge.webp" class="card-img-top" alt="Motorola Edge 40">
+                            <div class="card-body">
+                                <h4>Motorola Edge 40</h4>
+                                <p class="precio">$2.499.900</p>
+                                <a href="#" class="btn btn-danger">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tablets -->
+            <div class="mb-5">
+                <h3 class="mb-3">Tablets</h3>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="Img/Equipos/ipad-pro.webp" class="card-img-top" alt="iPad Pro">
+                            <div class="card-body">
+                                <h4>iPad Pro 2024</h4>
+                                <p class="precio">$5.999.900</p>
+                                <a href="#" class="btn btn-danger">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="Img/Equipos/galaxy-tab.jpg" class="card-img-top" alt="Samsung Galaxy Tab S9">
+                            <div class="card-body">
+                                <h4>Samsung Galaxy Tab S9</h4>
+                                <p class="precio">$3.999.900</p>
+                                <a href="#" class="btn btn-danger">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Todos los derechos reservados</p>
+            <div class="social my-3">
+                <a href="#" class="text-white">
+                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/youtube.svg" alt="YouTube">
+                </a>
+                <a href="#" class="text-white">
+                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/whatsapp.svg" alt="WhatsApp">
+                </a>
+                <a href="#" class="text-white">
+                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/envelope.svg" alt="Email">
+                </a>
+                <a href="#" class="text-white">
+                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/facebook.svg" alt="Facebook">
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="#" class="text-white">Términos y condiciones</a></li>
+                <li><a href="#" class="text-white">Legal y regulatorio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
