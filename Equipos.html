@@ -7,23 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/estilos.css">
-    <style>
-        main {
-            padding-top: 40px;
-            margin-top: 40px;
-        }
-        
-        .social a {
-            margin: 0 15px;
-            display: inline-block;
-        }
-        
-        .social img {
-            width: 50px;
-            height: 50px;
-            filter: invert(1) brightness(100%);
-        }
-    </style>
 </head>
 <body>
     <!-- Encabezado -->
@@ -58,35 +41,42 @@
             <div class="mb-5">
                 <h3 class="mb-3">Celulares</h3>
                 <div class="row">
+                    <!-- Producto 1-->
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="Img/Equipos/samsung-s24.jpg" class="card-img-top" alt="Samsung Galaxy S24">
                             <div class="card-body">
                                 <h4>Samsung Galaxy S24</h4>
                                 <p class="precio">$4.499.900</p>
-                                <a href="#" class="btn btn-danger">Ver producto</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalSamsungS24">
+                                    Ver producto
+                                </button>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Producto 2-->
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="Img/Equipos/iphone-15.webp" class="card-img-top" alt="iPhone 15">
                             <div class="card-body">
                                 <h4>iPhone 15</h4>
                                 <p class="precio">$4.999.900</p>
-                                <a href="#" class="btn btn-danger">Ver producto</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalIphone15">
+                                    Ver producto
+                                </button>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Producto 3-->
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="Img/Equipos/motorola-edge.webp" class="card-img-top" alt="Motorola Edge 40">
                             <div class="card-body">
                                 <h4>Motorola Edge 40</h4>
                                 <p class="precio">$2.499.900</p>
-                                <a href="#" class="btn btn-danger">Ver producto</a>
+                                <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalMotorolaEdge40">Ver producto</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +93,9 @@
                             <div class="card-body">
                                 <h4>iPad Pro 2024</h4>
                                 <p class="precio">$5.999.900</p>
-                                <a href="#" class="btn btn-danger">Ver producto</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalIpadPro">
+                                    Ver producto
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -114,7 +106,9 @@
                             <div class="card-body">
                                 <h4>Samsung Galaxy Tab S9</h4>
                                 <p class="precio">$3.999.900</p>
-                                <a href="#" class="btn btn-danger">Ver producto</a>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalGalaxyTabS9">
+                                    Ver producto
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -123,21 +117,177 @@
         </section>
     </main>
 
+    <!-- Modales de productos-->
+
+    <!-- Modal Samsung Galaxy S24-->
+    <div class="modal fade" id="modalSamsungS24" tabindex="-1" aria-labelledby="modalSamsungS24Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalSamsungS24Label">Samsung Galaxy S24</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img src="Img/Equipos/samsung-s24.jpg" class="img-fluid" alt="Samsung Galaxy S24">
+                            <p class="fw-bold mt-3">$4.499.900</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Características</h2>
+                            <ul>
+                                <li>Pantalla: 6.8" Dynamic AMOLED</li>
+                                <li>Procesador: Snapdragon 8 Gen 3</li>
+                                <li>Cámara: 200 MP principal</li>
+                                <li>Batería: 5000 mAh con carga rápida</li>
+                                <li>Resistencia al agua: IP68</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal iPhone 15-->
+    <div class="modal fade" id="modalIphone15" tabindex="-1" aria-labelledby="modalIphone15Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalIphone15Label">iPhone 15</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img src="Img/Equipos/iphone-15.webp" class="img-fluid" alt="iPhone 15">
+                            <p class="fw-bold mt-3">$4.999.900</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Características</h2>
+                            <ul>
+                                <li>Pantalla: 6.1" Super Retina XDR</li>
+                                <li>Procesador: A16 Bionic</li>
+                                <li>Cámara: 48 MP principal</li>
+                                <li>Batería: Hasta 20 horas de video</li>
+                                <li>Conectividad: USB-C</li>
+                                <li>Resistencia al agua y polvo: IP68</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Motorola Edge 40-->
+    <div class="modal fade" id="modalMotorolaEdge40" tabindex="-1" aria-labelledby="modalMotorolaEdge40Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalMotorolaEdge40Label">Motorola Edge 40</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img src="Img/Equipos/motorola-edge.webp" class="img-fluid" alt="Motorola Edge 40">
+                            <p class="fw-bold mt-3">$2.499.900</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Características</h2>
+                            <ul>
+                                <li>Pantalla: OLED 6.55" CURVA, 144Hz</li>
+                                <li>Procesador: MediaTeck Dimensity 8020</li>
+                                <li>Cámara: 50 MP principal</li>
+                                <li>Bateria: 4400 mAh con carga rápida</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal iPad Pro 2024 -->
+    <div class="modal fade" id="modalIpadPro" tabindex="-1" aria-labelledby="modalIpadProLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalIpadProLabel">iPad Pro 2024</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img src="Img/Equipos/ipad-pro.webp" class="img-fluid" alt="iPad Pro 2024">
+                            <p class="fw-bold mt-3">$5.999.900</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Características</h2>
+                            <ul>
+                                <li><strong>Pantalla:</strong> 12.9" Liquid Retina XDR</li>
+                                <li><strong>Procesador:</strong> Apple M2</li>
+                                <li><strong>RAM:</strong> 8GB / 16GB</li>
+                                <li><strong>Almacenamiento:</strong> 128GB / 256GB / 512GB / 1TB / 2TB</li>
+                                <li><strong>Cámara principal:</strong> 12 MP + Ultra gran angular 10 MP</li>
+                                <li><strong>Cámara frontal:</strong> 12 MP TrueDepth</li>
+                                <li><strong>Batería:</strong> Hasta 10 horas de autonomía</li>
+                                <li><strong>Sistema operativo:</strong> iPadOS 17</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Samsung Galaxy Tab S9 -->
+    <div class="modal fade" id="modalGalaxyTabS9" tabindex="-1" aria-labelledby="modalGalaxyTabS9Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalGalaxyTabS9Label">Samsung Galaxy Tab S9</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img src="Img/Equipos/galaxy-tab.jpg" class="img-fluid" alt="Samsung Galaxy Tab S9">
+                            <p class="fw-bold mt-3">$3.999.900</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Características</h2>
+                            <ul>
+                                <li><strong>Pantalla:</strong> 11" Dynamic AMOLED 2X</li>
+                                <li><strong>Procesador:</strong> Snapdragon 8 Gen 2</li>
+                                <li><strong>RAM:</strong> 8GB / 12GB</li>
+                                <li><strong>Almacenamiento:</strong> 128GB / 256GB</li>
+                                <li><strong>Cámara principal:</strong> 13 MP + Ultra gran angular 6 MP</li>
+                                <li><strong>Cámara frontal:</strong> 12 MP</li>
+                                <li><strong>Batería:</strong> 8400 mAh, carga rápida</li>
+                                <li><strong>Resistencia:</strong> IP68 (agua y polvo)</li>
+                                <li><strong>Sistema operativo:</strong> Android 13 con One UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Pie de página -->
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p>&copy; 2024 Todos los derechos reservados</p>
             <div class="social my-3">
-                <a href="#" class="text-white">
+                <a href="https://www.youtube.com/@ClaroColombia" target="_blank" class="text-white">
                     <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/youtube.svg" alt="YouTube">
                 </a>
-                <a href="#" class="text-white">
-                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/whatsapp.svg" alt="WhatsApp">
-                </a>
-                <a href="#" class="text-white">
-                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/envelope.svg" alt="Email">
-                </a>
-                <a href="#" class="text-white">
+                <a href="https://www.instagram.com/clarocolombia/" class="text-white" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/instagram.svg" alt="Instagram">
+                </a>             
+                <a href="https://www.facebook.com/ClaroCol/?locale=es_LA" class="text-white" target="_blank">
                     <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/icons/facebook.svg" alt="Facebook">
                 </a>
             </div>
